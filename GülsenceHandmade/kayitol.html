@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="tr">
 
     <head>
-        <title>
-            Kayıt Ol
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kayıt Ol</title>
+        <link rel="stylesheet" href="css/stil.css">
     </head>
 
     <body>
@@ -17,7 +19,7 @@
                 <li><a href="urunler.html">Ürünler</a></li>
                 <li><a href="sepet.html">Sepetim</a></li>
                 <li><a href="giris.html">Giriş yap</a></li>
-                <li><a href="kayitol.html">Kayıt ol</a></li>      
+                <li><a href="kayitol.html" class="aktif">Kayıt ol</a></li>      
             </ul>
         </nav>
         </header>
@@ -44,10 +46,29 @@
                         <label for="telno">Telefon Numarası</label>
                         <input type="tel" id="telno" name="telno" required>
                     </p>
+                    <p>
+                       Cinsiyet
+                       <input type="radio" id="erkek" name="cinsiyet" value="erkek" checked>
+                       <label for="erkek">Erkek</label> 
+                       <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+                       <label for="kadin">Kadın</label>
+                    </p>
+                    <p>
+                        <label for="adres">Adres Bilgileriniz</label>
+                        <textarea id="adres" name="adres" rows="3" cols="40" required></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="onay" name="onay" required>
+                        <label for="onay">Üyelik koşullarını ve gizlilik sözleşmesini onaylıyorum.</label>
+                    </p>
                         <button type="submit">Kayıt Ol</button>
                 </form>
                 
         </main>
+        <footer>
+            <p class="footer-slogan">Gülsence Handmade &copy; 2026 — Sevgiyle ve Özenle Tasarlandı</p>
+            <p class="footer-slogan">Tüm Hakları Saklıdır.</p>
+        </footer>
     </body>
 
 
